@@ -17,7 +17,23 @@ São ele:
 ## Criar um site
 `python manage.py startapp blog`
 
+No arquivo *mysite\mysite\settings.py*, adicione o blog criado aos APPS:
+```python
+# Application definition
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog',
+]
+```
+
 ## Iniciar o banco de dados
+O banco de dados padrão do Django é o SQLite3.
+
 `python manage.py migrate`
 
 ## Rodar o projeto

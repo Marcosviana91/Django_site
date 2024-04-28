@@ -38,3 +38,5 @@ O banco de dados padrão do Django é o SQLite3.
 
 ## Rodar o projeto
 `python manage.py runserver`
+
+pip freeze > req.txt

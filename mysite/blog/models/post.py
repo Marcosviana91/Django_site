@@ -17,6 +17,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
+        # -created_on Ordem decrescente
         ordering = ['-created_on']
 
     def __str__(self):
